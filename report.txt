@@ -1,0 +1,34 @@
+ML MODEL DEPLOYMENT STRATEGIES AND MODEL SERVING USING FASTAPI
+
+Dataset:
+Titanic - Machine Learning from Disaster (Kaggle)
+
+1. Online Inference vs Batch Inference
+Online inference processes one record per request and returns a prediction.
+Batch inference processes multiple records together and returns predictions
+for the entire group.
+
+2. Streaming Inference vs Batch Inference
+Streaming inference processes incoming records one at a time as they arrive.
+Batch inference collects multiple records and processes them together.
+In this assignment, streaming is simulated using a one-second delay between
+consecutive records.
+
+3. Why FastAPI is used for model serving
+FastAPI exposes the trained machine learning model through REST API endpoints.
+It supports Pydantic validation and automatic interactive API documentation
+through Swagger UI.
+
+4. Why the same trained model should be reused
+Reusing the same trained pipeline ensures consistent preprocessing and
+prediction behaviour across online, batch, streaming and API inference.
+It also avoids retraining separate models for each strategy.
+
+Results:
+Test accuracy: Fill in the actual accuracy printed by train_model.py.
+Health endpoint: Record the result of your API test.
+Prediction endpoint: Record the result of your API test.
+
+Conclusion:
+The project demonstrates model training, evaluation, model persistence,
+three inference strategies, and REST API-based model serving using FastAPI.

@@ -1,0 +1,45 @@
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Test and coverage files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Keep source dataset and assignment deliverables tracked.
+# Do not ignore model.pkl or generated CSV outputs because
+# they are required by this assignment.
